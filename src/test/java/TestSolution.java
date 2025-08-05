@@ -24,5 +24,7 @@ public class TestSolution {
         Assertions.assertThat(solutionTest.isValid(test5)).isTrue();
         String test6 = "([)]";
         Assertions.assertThat(solutionTest.isValid(test6)).isFalse();
+        String test7 = "({[]})";
+        Assertions.assertThat(solutionTest.isValid(test7)).isTrue();
     }
 }
